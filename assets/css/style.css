@@ -1,0 +1,284 @@
+@font-face {
+    font-family: Rubrik;
+    src: url("../fonts/Rubik.ttf");
+}
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    font-family: Rubrik;
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+div#home{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    height: 100vh;
+    background-image: url("../img/bg-portifolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    padding: 1rem 10rem;
+    background: white;
+    opacity: 0.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid black;
+    z-index: 2;
+}
+
+ul#menu{
+    display: flex;
+    column-gap: 10rem;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+ul#menu li a{
+    position: relative;
+    text-decoration: none;
+}
+
+ul#menu li a:hover{
+    transform: scale(0.2);
+}
+
+ul#menu li a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+ul#menu li a:hover:after{
+    width: 100%;
+}
+
+.menu-item{
+    color: black;
+}
+
+div#social{
+    display: flex;
+    gap: 5rem;
+}
+
+div#social img{
+    width: 4rem;
+}
+
+section#jp{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem;
+}
+
+hgroup h1#name{
+    font-size: 70pt;
+    background: #666666;
+    background: linear-gradient(to left, #666666 1%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+hgroup h2#role{
+    font-size: 50pt;
+    background: #D4D4D4;
+    background: linear-gradient(to left, #D4D4D4 1%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div#about{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-image: url("../img/bg-portifolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#section-about{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 5rem 0 5rem;
+}
+
+hgroup#text-about{
+    width: 50%;
+    height: 80%;
+    background: rgb(255,255,255,0.3);
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #666666;
+    padding: 3rem;
+}
+
+hgroup#text-about h2{
+    font-size: 50pt;
+}
+
+hgroup#text-about p{
+    font-size: 25pt;
+}
+
+figure#fig-about{
+    position: relative;
+}
+
+img#img-self-ilustration{
+    position: absolute;
+    bottom:0;
+    right: 0;   
+    width: 86.5rem;
+    z-index: 1;
+}
+
+div#projects{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-image: url("../img/bg-portifolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#section-projects{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 5rem;
+    padding: 5% 5rem 0 5rem;
+}
+
+.project{
+    width: 45rem;
+    height: 35rem;
+    transition: all 0.6s;
+}
+
+.project:hover{
+    transform: scale(1.1);
+}
+
+.project img{
+    border-radius: 5rem;
+    opacity: 0.8;
+}
+
+div#techstack{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-image: url("../img/bg-portifolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#section-teckstack{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 15rem 5% 15rem;
+}
+
+div#tecks{
+    width: 45%;
+    height: 100%;
+    background: rgb(255,255,255,0.3);
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #666666;
+    padding: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+i{
+    font-size: 15rem;
+    transition: font-size 0.5s;
+}
+
+i:hover{
+    font-size: 17rem;
+}
+
+div#description{
+    text-align: justify;
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background: rgb(255,255,255,0.3);
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #666666;
+    padding: 3rem 8rem 3rem 3rem;
+}
+
+.tech-description{
+    display: none;
+}
+
+.tech-description.active{
+    display: block;
+}
+
+.tech-description h2{
+    font-size: 50pt;
+}
+
+.tech-description p{
+    margin-top: 3rem;
+    font-size: 25pt;
+}
+
+footer{
+    height: 10rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    background: rgb(172, 172, 172);
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid black;
+}
+
+footer p{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
