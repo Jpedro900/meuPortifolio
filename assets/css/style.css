@@ -36,6 +36,7 @@ div#home{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 header{
     position: fixed;
     width: 100%;
@@ -62,9 +63,6 @@ ul#menu li a{
     text-decoration: none;
 }
 
-ul#menu li a:hover{
-    transform: scale(0.2);
-}
 
 ul#menu li a:after{
     content: "";
@@ -92,6 +90,11 @@ div#social{
 
 div#social img{
     width: 4rem;
+    transition: all 0.5s;
+}
+
+div#social img:hover{
+    transform: scale(1.2);
 }
 
 section#jp{
@@ -118,7 +121,12 @@ hgroup h2#role{
     -webkit-text-fill-color: transparent;
 }
 
+figure img#img-home-2{
+    display: none;
+}
+
 div#about{
+    overflow: hidden;
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -192,6 +200,7 @@ section#section-projects{
 }
 
 .project:hover{
+    cursor: pointer;
     transform: scale(1.1);
 }
 
@@ -279,4 +288,242 @@ footer p{
     margin: auto;
     text-align: center;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 1440px){
+    hgroup h1#name{
+        font-size: 55pt;
+    }
+    hgroup h2#role{
+        font-size: 35pt;
+    }
+
+    hgroup#text-about h2{
+        font-size: 35pt;
+    }
+    
+    hgroup#text-about p{
+        font-size: 22pt;
+    }
+    
+    img#img-self-ilustration{ 
+        width:83.5rem;
+        right: -12rem;
+    }
+    
+    .project{
+        background-image: url('../img/breve-1440.png');
+        width: 40rem;
+        height: 31.1rem;
+    }
+    .project:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    i{
+        font-size: 10rem;
+        transition: font-size 0.5s;
+    }
+    
+    i:hover{
+        font-size: 11.5rem;
+    }
+    div#description{
+        padding: 3rem 7rem 3rem 3rem;
+    }
+    .tech-description h2{
+        font-size: 40pt;
+    }
+    
+    .tech-description p{
+        margin-top: 3rem;
+        font-size: 22pt;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 1rem 2rem;
+    }
+    ul#menu{
+        display: flex;
+        column-gap: 3rem;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    section#jp{
+        padding: 15rem 0 0 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    figure img#img-home-1{
+        display: none;
+    }
+    figure img#img-home-2{
+        display: block;
+        width: 70rem;
+    }
+    hgroup h1#name{
+        font-size: 40pt;
+    }
+    hgroup h2#role{
+        font-size: 30pt;
+    }
+    section#section-about{
+        display: block;
+        padding: 20% 5rem 0 5rem;
+    }
+    hgroup#text-about{
+        width: 100%;
+        height: 90%;
+        padding: 4rem;
+    }
+    hgroup#text-about h2{
+        font-size: 37pt;
+    }
+    
+    hgroup#text-about p{
+        font-size: 25pt;
+    }
+    
+    img#img-self-ilustration{ 
+        display: none;
+    }
+    section#section-projects{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 5rem;
+        padding: 15% 5rem 10% 5rem;
+    }
+    .project{
+        background-image: url('../img/breve-768.png');
+        width: 40rem;
+        height: 22rem;
+    }
+
+    div#project4,div#project5,div#project6{
+        display: none;
+    }
+    .project:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    section#section-teckstack{
+        padding: 8% 1rem 5% 1rem;
+    }
+    div#tecks{
+        width: 40%;
+        height: 90%;
+    }
+    i{
+        font-size: 8rem;
+        transition: font-size 0.5s;
+    }
+    
+    i:hover{
+        font-size: 9rem;
+    }
+    div#description{
+        width: 55%;
+        height: 70%;
+        padding: 3rem 7rem 3rem 3rem;
+    }
+    .tech-description h2{
+        font-size: 30pt;
+    }
+    
+    .tech-description p{
+        margin-top: 1rem;
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 414px){
+    html{
+        overflow-x: hidden;
+    }
+    header{
+        justify-content: center;
+        overflow: hidden;
+        padding: 1rem 2rem;
+    }
+    ul#menu{
+        display: flex;
+        column-gap: 3rem;
+        font-size: 12pt;
+        font-weight: bold;
+    }
+    div#social{
+        display: none;
+    }
+    section#jp{
+        padding: 10rem 2rem 0 2rem;
+    }
+    figure img#img-home-1{
+        display: none;
+    }
+    figure img#img-home-2{
+        display: block;
+        width: 45rem;
+    }
+    hgroup h1#name{
+        font-size: 42pt;
+    }
+    hgroup h2#role{
+        font-size: 30pt;
+    }
+    section#section-about{
+        display: block;
+        padding: 30% 5rem 0 5rem;
+    }
+    hgroup#text-about{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    hgroup#text-about h2{
+        font-size: 20pt;
+    }
+    hgroup#text-about p{
+        font-size: 14.5pt;
+    }
+    section#section-projects{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 0;
+        padding: 22% 0 10% 0;
+    }
+    .project{
+        background-image: url('../img/breve-375.png');
+        width: 33rem;
+        height: 20rem;
+    }
+    section#section-teckstack{
+        padding: 8% 1rem 5% 1rem;
+    }
+    div#tecks{
+        width: 40%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y:scroll;
+    }
+    div#description{
+        width: 55%;
+        height: 70%;
+        padding: 3rem 7rem 3rem 3rem;
+        overflow-y:scroll;
+    }
+    .tech-description h2{
+        font-size: 20pt;
+    }
+    
+    .tech-description p{
+        margin-top: 1rem;
+        font-size: 14pt;
+    }
 }
