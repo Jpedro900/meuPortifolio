@@ -183,6 +183,9 @@ section#section-projects{
 }
 
 .project{
+    background-image: url('../img/breve.png');
+    opacity: 0.8;
+    border-radius: 5rem;
     width: 45rem;
     height: 35rem;
     transition: all 0.6s;
@@ -190,11 +193,6 @@ section#section-projects{
 
 .project:hover{
     transform: scale(1.1);
-}
-
-.project img{
-    border-radius: 5rem;
-    opacity: 0.8;
 }
 
 div#techstack{
